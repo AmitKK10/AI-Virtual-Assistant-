@@ -1,0 +1,87 @@
+.main {
+  height: 100vh; 
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: start; 
+  align-items: center;
+ flex-direction: column;
+ padding-top: 50px;
+ gap: 20px;
+}
+#AMITI {
+  width: 100%; /* Adjusts automatically based on screen size */
+  max-width: 300px; /* Prevents image from getting too large */
+  height: 70%; /* Maintains aspect ratio */
+  border-radius: 30px;
+  display: block;
+  margin: 0 auto; /* Centers the image */
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.5);
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 1000px) {
+  #AMITI {
+    max-width: 80%; /* Reduce image size for mobile */
+    border-radius: 20px; /* Slightly smaller border radius */
+  }
+}
+
+
+span {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: clamp(1rem, 2vmax, 2.5rem); /* Responsive font size */
+  background: linear-gradient(to right, rgb(34, 221, 231), rgb(237, 4, 125));
+  background-clip: text;
+  -webkit-background-clip: text; /* Ensures compatibility for WebKit browsers */
+  color: transparent;
+  display: inline-block; /* Ensures gradient applies correctly */
+  text-align: center;
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 1000px) {
+  span {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+}
+
+
+button {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between text and icon */
+  background: linear-gradient(to right,rgb(34,221,231),rgb(237,4,125));
+  
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Space between button and text */
+}
+
+.response{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#speak{
+  width: 50px;
+
+}
+
+p{
+  color: white;
+  font-size:medium;
+}
+
+#voice{
+  width: 500px;
+  height: 50px;
+}
