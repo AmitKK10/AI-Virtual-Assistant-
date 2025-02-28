@@ -31,6 +31,94 @@ function takeCommand(command)
       
   }
 
+        
+    else if(command.includes("open") && command.includes("instagram"))
+      {
+        window.open("https://www.instagram.com/" , "_blank")
+        speak("opening instagram...")
+    
+        
+        setTimeout( () =>
+          {
+    
+            setSpeaking(false)
+           
+    
+          },5000)
+    
+          
+      }
+
+      else if(command.includes("open") && command.includes("x"))
+        {
+          window.open("https://www.x.com/" , "_blank")
+          speak("opening x...")
+      
+          
+          setTimeout( () =>
+            {
+      
+              setSpeaking(false)
+             
+      
+            },5000)
+      
+            
+        }
+
+
+        else if(command.includes("open") && command.includes("facebook"))
+          {
+            window.open("https://www.facebook.com/" , "_blank")
+            speak("opening facebook...")
+        
+            
+            setTimeout( () =>
+              {
+        
+                setSpeaking(false)
+               
+        
+              },5000)
+        
+              
+          }
+
+          else if(command.includes("open") && command.includes("whatsapp"))
+            {
+              window.open("https://web.whatsapp.com/" , "_blank")
+              speak("opening whatsapp...")
+          
+              
+              setTimeout( () =>
+                {
+          
+                  setSpeaking(false)
+                 
+          
+                },5000)
+          
+                
+            }
+
+
+            else if(command.includes("open") && command.includes("linkedin"))
+              {
+                window.open("https://www.linkedin.com/" , "_blank")
+                speak("opening linkedin...")
+            
+                
+                setTimeout( () =>
+                  {
+            
+                    setSpeaking(false)
+                   
+            
+                  },5000)
+            
+                  
+              }
+
   else if(command.includes("open") && command.includes("google"))
     {
       window.open("https://www.google.co.in/" , "_blank")
